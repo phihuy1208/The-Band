@@ -148,7 +148,7 @@ html {
     margin-top: 46px;
     min-height: 100px;
     padding-top: 50%;
-    background: url("/assets/Image/Slider/slider1.jpg") top center / cover no-repeat
+    background: url("../Image/Slider/slider1.jpg") top center / cover no-repeat
 }
 
 #Slider .text-content {
