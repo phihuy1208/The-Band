@@ -1,0 +1,525 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* Common */
+
+.clear {
+    clear: both;
+}
+
+.white-text {
+    color: white !important;
+}
+
+.row {
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col {
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.col-third {
+    width: 33.33333%;
+}
+
+.col-half {
+    width: 50%;
+}
+
+.col-full {
+    width: 100%;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+
+/* Main */
+
+#main {}
+
+
+/* CSS Header */
+
+#Header {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 46px;
+    background-color: #000;
+}
+
+#nav,
+#nav>li {
+    display: inline-block;
+}
+
+#nav>li>a {
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0 24px;
+}
+
+#nav .subnav>li>a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 36px;
+}
+
+#nav,
+.subnav {
+    list-style-type: none;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 46px;
+    display: block;
+}
+
+#nav>li {
+    position: relative;
+}
+
+#nav .subnav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#Header .menu-button,
+#Header .search-button {
+    padding: 0 21px;
+    float: right;
+    font-size: 20px;
+    color: #fff;
+    line-height: 46px;
+}
+
+#Header .menu-button {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* End CSS header */
+
+
+/* CSS Slider */
+
+#Slider {
+    position: relative;
+    margin-top: 46px;
+    min-height: 100px;
+    padding-top: 50%;
+    background: url("/assets/Image/Slider/slider1.jpg") top center / cover no-repeat
+}
+
+#Slider .text-content {
+    position: absolute;
+    left: 50%;
+    bottom: 47px;
+    color: #fff;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+#Slider .text-head {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+#Slider .text-description {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+/* End CSS Slider */
+
+
+/* CSS Dung chung */
+
+#Main .content-section {
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px;
+}
+
+.content-section .section-heading {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin: 10px 0;
+    letter-spacing: 4px;
+}
+
+.content-section .section-sub-heading {
+    font-size: 15px;
+    text-align: center;
+    font-style: italic;
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+
+/* End CSS dung chung */
+
+
+/* CSS Content */
+
+
+/* End CSS Content */
+
+#Content .about-us .about-us-paragraph {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.4;
+    margin: 15px 0;
+}
+
+#Content .member-info {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+#Content .member-info img {
+    width: 60%;
+    border-radius: 4px;
+}
+
+#Content .member-info p {
+    margin: 15px 0;
+}
+
+
+/* TOUR DATE */
+
+#Content .tour-section {
+    background-color: #000;
+}
+
+#Content .tour-section .months-ticket-sale {
+    background-color: #fff;
+    list-style: none;
+}
+
+#Content .tour-section .months-ticket-sale li {
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+    font-size: 15px;
+    color: #757575
+}
+
+.tour-section .months-ticket-sale .status {
+    background-color: #f44336;
+    padding: 1px 8px;
+    font-size: 15px;
+    margin-left: 16px;
+}
+
+.tour-section .months-ticket-sale .quantity {
+    height: 24px;
+    width: 24px;
+    background-color: #000;
+    float: right;
+    text-align: center;
+    line-height: 24px;
+    border-radius: 50%;
+    margin-top: -3px;
+}
+
+
+/* place */
+
+.tour-section .place-list {
+    margin-top: 32px;
+    margin-bottom: 48px;
+}
+
+.place-list img {
+    width: 100%;
+    display: block;
+}
+
+.tour-section .place-body {
+    padding: 16px;
+    background-color: #fff;
+}
+
+.tour-section .place-heading {
+    font-size: 15px;
+    margin: 15px 0;
+}
+
+.tour-section .place-time {
+    font-size: 15px;
+    margin: 15px 0;
+    color: #757575;
+}
+
+.tour-section .place-description {
+    font-size: 15px;
+    margin: 15px 0;
+    line-height: 1.4;
+}
+
+.tour-section .place-buy-btn {
+    line-height: 20px;
+    padding: 8px 16px;
+    background-color: #000;
+    color: #fff;
+    border: 0;
+}
+
+
+/* END TOUR DATE */
+
+
+/* CSS Model */
+
+#Model {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    display: none;
+}
+
+#Model.open {
+    display: flex;
+}
+
+#Model .model-container {
+    width: 900px;
+    min-height: 200px;
+    max-width: calc(100% - 32px);
+    background-color: #fff;
+    position: relative;
+    animation: modelShow ease .5s;
+}
+
+#Model .model-header {
+    color: #fff;
+    padding: 42px 16px;
+    font-size: 32px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #009688;
+    letter-spacing: 4px;
+}
+
+#Model .model-header i {
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+#Model .model-close {
+    color: #fff;
+    position: absolute;
+    padding: 12px;
+    right: 0;
+    top: 0;
+}
+
+#Model .model-content {
+    padding: 16px;
+}
+
+#Model .model-label {
+    display: block;
+    margin-bottom: 12px;
+}
+
+#Model .model-input {
+    display: block;
+    margin-bottom: 20px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc
+}
+
+#Model .model-pay-bnt {
+    color: #fff;
+    border: 0;
+    background-color: #009688;
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 16px;
+    font-weight: 500;
+}
+
+#Model .model-footer {
+    text-align: right;
+    padding-bottom: 16px;
+    padding-right: 16px;
+}
+
+#Model .model-footer a {
+    color: #2196f3;
+}
+
+@keyframes modelShow {
+    from {
+        transform: translateY(-540px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+/* @keyframes modelUnshow {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-540px);
+        opacity: 0;
+    }
+} */
+
+
+/* End CSS Model */
+
+#Contact {}
+
+#Contact .contact-container {
+    padding: 32px 0;
+}
+
+.contact-container .contact-info {
+    display: block;
+    font-size: 18px;
+}
+
+.contact-container .contact-info i {
+    padding-right: 16px;
+}
+
+.contact-container .form-control {
+    padding: 8px;
+    width: 100%;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+}
+
+.contact-container .form-send-btn {
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    float: right;
+    margin-top: 8px;
+    border: 0;
+}
+
+.map-section img {
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+#Footer {
+    padding: 64px 16px;
+}
+
+#Footer .social-list {
+    font-size: 20px;
+}
+
+#Footer .copyright,
+#Footer .social-list a {
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#Footer .copyright a {
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#Footer .copyright {
+    margin-top: 16px;
+}
+
+#Footer a:hover {
+    color: rgba(0, 0, 0, 0.4);
+}
+
+
+/* Hover */
+
+#Header .menu-button:hover,
+#nav>li:hover>a,
+#Model .model-close:hover,
+#Model .model-pay-bnt:hover,
+.tour-section .place-buy-btn:hover,
+.contact-container .form-send-btn:hover {
+    color: #000;
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+#nav .subnav li:hover {
+    background-color: #ccc;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#Header .search-button:hover {
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+.place-list img:hover {
+    opacity: 0.6;
+}
